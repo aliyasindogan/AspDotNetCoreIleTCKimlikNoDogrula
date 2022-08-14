@@ -21,7 +21,7 @@ namespace AspDotNetCoreIleTCKimlikNoDogrula.Pages
         public async void OnGet()
         {
             var client = new MernisServis.KPSPublicSoapClient(KPSPublicSoapClient.EndpointConfiguration.KPSPublicSoap);
-            var response = await client.TCKimlikNoDogrulaAsync(Convert.ToInt64(30461282111), "ALİ YASİN", "DOĞAN", 1979);
+            var response = await client.TCKimlikNoDogrulaAsync(Convert.ToInt64(11111111111), "ALİ YASİN", "DOĞAN", 1979);
             var result = response.Body.TCKimlikNoDogrulaResult;
         }
     }
